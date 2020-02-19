@@ -1,30 +1,53 @@
 /*Main Styles with media queries*/
  /* GLOBAL STYLES */
- h3 {text-align:center;}
+h3 {
+    text-align: center;
+}
 
- /* PRINT VERSION */
- @media print {
-     h3:after {content: ' - PRINT'; display: inline;}
- }
+/* PRINT VERSION */
+@media print {
+    h3:after {
+        content: ' - PRINT';
+        display: inline;
+    }
+}
 
- /* PHONE LANDSCAPE VERSION */
- @media only screen and (min-width: 320px) and (orientation : landscape) {
-     h3:after {content: ' - PHONE LANDSCAPE'; display: inline;}
- }
- /* PHONE PORTRAIT VERSION */
- @media only screen and (min-width: 320px) and (orientation : portrait) {
-     h3:after {content: ' - PHONE PORTRAIT'; display: inline;}
- }
+/* PHONE LANDSCAPE VERSION */
+@media only screen and (min-width: 320px) and (orientation : landscape) {
+    h3:after {
+        content: ' - PHONE LANDSCAPE';
+        display: inline;
+    }
+}
 
- /* TABLET LANDSCAPE VERSION - not work, are the same as desktop */
- @media only screen and (min-width: 768px) and (orientation : landscape) {
-     h3:after {content: ' - TABLET LANDSCAPE'; display: inline;}
- }
- /* TABLET PORTRAIT VERSION */
- @media only screen and (min-width: 768px) and (orientation : portrait) {
-     h3:after {content: ' - TABLET PORTRAIT'; display: inline;}
- }
- /* DESKTOP VERSION */
- @media only screen and (min-width: 980px) {
-     h3:after {content: ' - DESKTOP'; display: inline;}
- }
+/* PHONE PORTRAIT VERSION */
+@media only screen and (min-width: 320px) and (orientation : portrait) {
+    h3:after {
+        content: ' - PHONE PORTRAIT';
+        display: inline;
+    }
+}
+
+/* TABLET LANDSCAPE VERSION - not work, are the same as desktop */
+@media only screen and (min-width: 768px) and (orientation : landscape) {
+    h3:after {
+        content: ' - TABLET LANDSCAPE';
+        display: inline;
+    }
+}
+
+/* TABLET PORTRAIT VERSION */
+@media only screen and (min-width: 768px) and (orientation : portrait) {
+    h3:after {
+        content: ' - TABLET PORTRAIT';
+        display: inline;
+    }
+}
+
+/* DESKTOP VERSION */
+@media only screen and (min-width: 980px) {
+    h3:after {
+        content: ' - DESKTOP';
+        display: inline;
+    }
+}
